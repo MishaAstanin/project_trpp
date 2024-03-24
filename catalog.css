@@ -1,0 +1,379 @@
+/*====================================================Слайдер============================================*/
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+ }
+ 
+ .navigation {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+ }
+ 
+ .bar {
+    height: 8px;
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #ced4da;
+    border-radius: 10px;
+    transition: all .4s;
+ }
+ 
+ .bar:hover {
+    background-color: #495057;
+    transform: scale(1.1);
+ }
+ 
+ .slides input {
+    position: absolute;
+    visibility: hidden;
+ }
+ 
+ .slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+ }
+ 
+ .slide {
+    width: 25%;
+    transition: all .6s ease;
+    display: flex;
+    align-items: center;
+ }
+ 
+ .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+ }
+ 
+ #switch1:checked ~ .s1 {
+    margin-left: 0;
+ }
+ #switch2:checked ~ .s1 {
+    margin-left: -25%;
+ }
+ #switch3:checked ~ .s1 {
+    margin-left: -50%;
+ }
+ #switch4:checked ~ .s1 {
+    margin-left: -75%;
+ }
+
+ #switch12:checked ~ .s2 {
+    margin-left: 0;
+ }
+ #switch22:checked ~ .s2 {
+    margin-left: -25%;
+ }
+ #switch32:checked ~ .s2 {
+    margin-left: -50%;
+ }
+ #switch42:checked ~ .s2 {
+    margin-left: -75%;
+ }
+
+ #switch13:checked ~ .s3 {
+    margin-left: 0;
+ }
+ #switch23:checked ~ .s3 {
+    margin-left: -25%;
+ }
+ #switch33:checked ~ .s3 {
+    margin-left: -50%;
+ }
+ #switch43:checked ~ .s3 {
+    margin-left: -75%;
+ }
+
+ #switch14:checked ~ .s4 {
+    margin-left: 0;
+ }
+ #switch24:checked ~ .s4 {
+    margin-left: -25%;
+ }
+ #switch34:checked ~ .s4 {
+    margin-left: -50%;
+ }
+ #switch44:checked ~ .s4 {
+    margin-left: -75%;
+ }
+
+ #switch15:checked ~ .s5 {
+    margin-left: 0;
+ }
+ #switch25:checked ~ .s5 {
+    margin-left: -25%;
+ }
+ #switch35:checked ~ .s5 {
+    margin-left: -50%;
+ }
+ #switch45:checked ~ .s5 {
+    margin-left: -75%;
+ }
+
+ #switch16:checked ~ .s6 {
+    margin-left: 0;
+ }
+ #switch26:checked ~ .s6 {
+    margin-left: -25%;
+ }
+ #switch36:checked ~ .s6 {
+    margin-left: -50%;
+ }
+ #switch46:checked ~ .s6 {
+    margin-left: -75%;
+ }
+
+ #switch17:checked ~ .s7 {
+    margin-left: 0;
+ }
+ #switch27:checked ~ .s7 {
+    margin-left: -25%;
+ }
+ #switch37:checked ~ .s7 {
+    margin-left: -50%;
+ }
+ #switch47:checked ~ .s7 {
+    margin-left: -75%;
+ }
+
+ #switch18:checked ~ .s8 {
+    margin-left: 0;
+ }
+ #switch28:checked ~ .s8 {
+    margin-left: -25%;
+ }
+ #switch38:checked ~ .s8 {
+    margin-left: -50%;
+ }
+ #switch48:checked ~ .s8 {
+    margin-left: -75%;
+ }
+
+ #switch19:checked ~ .s9{
+    margin-left: 0;
+ }
+ #switch29:checked ~ .s9 {
+    margin-left: -25%;
+ }
+ #switch39:checked ~ .s9 {
+    margin-left: -50%;
+ }
+ #switch49:checked ~ .s9 {
+    margin-left: -75%;
+ }
+ /*====================================================Слайдер============================================*/
+
+ /*====================================================Каталог============================================*/
+ 
+ .catalog-block {
+    width: 100%;
+    display: none;
+ }
+ 
+ .car-info p {
+    margin: 0;
+    color: #000;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+ }
+ 
+ .colors {
+    display: grid;
+    grid-template-columns: repeat(5, 10px);
+    gap: 5px;
+ }
+ .black {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: black;
+ }
+ .white {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: white;
+ }
+ .red {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: red;
+ }
+ .green {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: green;
+ }
+ .blue {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: blue;
+ }
+ 
+ .car-info {
+    width: 100%;
+    background: linear-gradient(to bottom, #fdf0d5, #d3c09a);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 5%;
+    max-width: 350px;
+ }
+ 
+ .car-info-item {
+    display: grid;
+    grid-template-columns: 50px auto;
+    align-items: center;
+ }
+ 
+ .car-info-item p {
+    margin: 0;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+ }
+ 
+ .shop-h {
+    display: none;
+    font-family: 'Poppins', sans-serif;
+ }
+ 
+ .shop-h:target {
+    display: block;
+    scroll-margin-top: 100px; /* задаем отступ в 100 пикселей */
+ }
+ 
+ .shop-h:target + .catalog-block{
+    border-color: #03045e;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+    padding: 1%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+ }
+ 
+ @media screen and (max-width:840px){
+    .shop-h:target + .catalog-block{
+       grid-template-columns: 1fr;
+    }
+ }
+ 
+ .shop {
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ }
+ 
+ .shop-item {
+    width: 350px;
+    max-height: 350px;
+    background: linear-gradient(to bottom, white, #d1d1d1);
+    margin-bottom: 2%;
+    border-radius: 20px;
+    position: relative;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #03045e;
+ }
+ 
+ .shop-item * {
+    padding: 0;
+    margin: 0;
+ }
+ 
+ .shop-item a {
+    color: #000;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .shop-item a:hover {
+    color: whitesmoke;
+ }
+ 
+ .shop-photo img {
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    max-width: 100%;
+ }
+ 
+ .shop-photo {
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .shop-text {
+    color: #000;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(18px, 2vw, 24px);
+ }
+ 
+ .shop-button {
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .shop-header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #669BBC;
+    border-radius: 10px;
+    font-weight: 700;
+ }
+ 
+ .shop-header * {
+    margin: calc(1px + 0.3vw) calc(5px + 0.5vw);
+ }
+ 
+ .shop-header img {
+    width: calc(50px + 4vw);
+    height: calc(50px + 4vw);
+ }
+ 
+ .shop-header span {
+    font-size: calc(50px + 6vw);
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    color: #003049;
+ }
+ 
+ .head-container {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ /*====================================================Каталог============================================*/
