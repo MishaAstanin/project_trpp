@@ -1,0 +1,170 @@
+/*===============================================Вход в аккаунт==========================================*/
+   
+.login-to-profile {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    position: relative;
+    background-image: url(image/backphoto.jpg);
+    background-size: cover;
+ }
+ 
+ .login-to-profile form {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 4%;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+ }
+ 
+ .login-to-profile button {
+    border-radius: 20px;
+    border: 0;
+    padding: 2%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    width: 25%;
+    margin: 2%;
+    font-size: 13px;
+    cursor: pointer;
+ }
+
+ #captcha-button {
+    width: 42%;
+ }
+ #captcha {
+    margin-left: 5.150px;
+ }
+ 
+ .login-to-profile input {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    border: 0;
+    padding: 2%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    width: 80%;
+    margin: 2%;
+ }
+ 
+ ::placeholder {
+    color: black;
+    opacity: 0.6;
+  }
+ 
+ .login-to-profile p {
+    margin: 0;
+    font-size: clamp(10px, 3vw, 14px);
+ }
+ 
+ .login-to-profile h3 {
+    margin: 0 2%;
+ }
+ 
+ .login-to-profile a{
+    color: #ff862b; 
+    cursor: pointer;
+ }
+ .login-to-profile a:hover{
+    color: #f9eab6;
+ }
+ 
+ .small-square1{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    left: 50%;
+    top: 50%;
+ }
+ .sq11 { animation: square-animation11 10s infinite 0s;}
+ .sq12 {animation: square-animation12 12s infinite 2s;}
+ 
+ .small-square2{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    right: 35%;
+    top: 20%;
+ }
+ .sq21 { animation: square-animation21 14s infinite 0s;}
+ .sq22 {animation: square-animation22 10s infinite 2s; z-index: 1;}
+ 
+ .small-square3{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    left: 32%;
+    top: 50%;
+ }
+ .sq31 { animation: square-animation31 9s infinite 0s;}
+ .sq32 {animation: square-animation32 12s infinite 2s;}
+ 
+ @keyframes square-animation11 {
+    0% {left: 50%; top: 50%}
+    25% {left: 65%; top: 50% }
+    50% { left: 65%; top: 72% }
+    75% { left: 50%; top: 65% }
+    100% {left: 50%; top: 50%}
+ }
+ @keyframes square-animation12 {
+    0% {left: 50%; top: 50%}
+    25% {left: 63%; top: 50% }
+    50% { left: 63%; top: 40% }
+    75% { left: 50%; top: 40% }
+    100% {left: 50%; top: 50%}
+ }
+ @keyframes square-animation21 {
+    0% {right: 35%; top: 20%}
+    25% {right: 35%; top: 40%}
+    50% { right: 55%; top: 40% }
+    75% { right: 55%; top: 20% }
+    100% {right: 35%; top: 20%}
+ }
+ @keyframes square-animation22 {
+    0% {right: 35%; top: 20%}
+    25% {right: 35%; top: 35%}
+    50% { right: 38%; top: 35% }
+    75% { right: 38%; top: 20% }
+    100% {right: 35%; top: 20%}
+ }
+ @keyframes square-animation31 {
+    0% {left: 32%; top: 50%; }
+    25% {left: 32%; top: 60%; }
+    50% { left: 40%; top: 40%; }
+    75% {left: 40%; top: 60%; }
+    100% {left: 32%; top: 50%; }
+ }
+ @keyframes square-animation32 {
+    0% {left: 32%; top: 50%; }
+    25% {left: 32%; top: 40%; }
+    50% { left: 38%; top: 45%; }
+    75% {left: 35%; top: 65%; }
+    100% {left: 32%; top: 50%; }
+ }
+
+ @media screen and (max-width: 1180px){
+    .sq22 {
+       z-index: 0;
+    }
+ }
+ @media screen and (max-width: 790px){
+    .small-square1, .small-square2, .small-square3 {
+       visibility: hidden;
+    }
+ }
+
+ /*===============================================Вход в аккаунт==========================================*/
