@@ -1,0 +1,111 @@
+/*=====================================================Формы=============================================*/
+
+#agree {
+    color: white;
+   }
+
+ #quiz {
+    border-radius: 10px;
+    padding: 1%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-image: url(image/backphoto4.jpg);
+    background-size: cover;
+ }
+
+ .fieldset-div {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   width: 100%;
+   gap: 2%;
+   grid-template-areas: 
+   "field1 field2 field3";
+   margin-bottom: 15px;
+ }
+
+ .fieldset-div-item {
+   border: white 2px solid;
+   padding: 10px;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+ }
+
+ .fieldset-div-item p {
+   margin: 0;
+ }
+
+ .file-div {
+   display: grid;
+   grid-template-columns: 1fr;
+ }
+
+ textarea[placeholder="Мой отзыв..."] {
+   font-family: 'Poppins', sans-serif;
+   width: 50%;
+   margin: 10px 0;
+ }
+
+ @media screen and (max-width: 1025px) {
+   .fieldset-div {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: 
+         "field1 field2"
+         "field3 .";
+    }
+    textarea[placeholder="Мой отзыв..."] {
+      width: 90%;
+    }
+ }
+ 
+ @media screen and (max-width: 410px) {
+   .fieldset-div {
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+         "field1"
+         "field2"
+         "field3";
+      justify-items: center;
+    }
+    .fieldset-div-item {
+      width: 200px;
+    }
+ }
+
+ .reviews-container {
+   width: 100%;
+   height: auto;
+   display: grid;
+   grid-template-columns: 1fr;
+ }
+
+ .review {
+   width: 100%;
+   height: auto;
+   display: grid;
+   grid-template-columns: 1fr;
+   margin: 2% 0;
+   background: linear-gradient(to right, rgb(49, 62, 131), #1a1919);
+   color: white;
+   padding: 2%;
+   border-radius: 10px;
+ }
+
+ .user-name {
+   display: grid;
+   grid-template-columns: 30px auto;
+   align-items: center;
+   font-style: italic;
+   font-weight: 700;
+ }
+
+ .user-name img {
+   filter: invert();
+ }
+
+ .review p {
+   margin: 0;
+ }
+
+   /*=====================================================Формы=============================================*/
